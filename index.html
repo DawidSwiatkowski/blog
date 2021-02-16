@@ -21,17 +21,22 @@
       touch-action: none;
     }
   </style>
-  
-  <script src="https://cdn.babylonjs.com/babylon.js"></script>
-  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-  <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 </head>
 
 <body>
 
   <canvas id="renderCanvas" touch-action="none"></canvas>
+  
+  <!--script src="https://cdn.babylonjs.com/babylon.js"></script-->
 
-  <script>
+  <script src="js/babylonjs/babylon.js"></script>
+  <script src="js/babylonjs/babylonjs.loaders.min.js"></script>
+  <script src="js/babylonjs/pep.js"></script>
+  <script src="js/main.js" type="module"></script>
+
+
+  
+  <!--script>
     const canvas = document.getElementById("renderCanvas");
     const engine = new BABYLON.Engine(canvas, true);
     const scene = createScene();
@@ -43,7 +48,7 @@
     window.addEventListener("resize", function () {
       engine.resize();
     });
-  </script>
+  </script-->
 
 </body>
 
